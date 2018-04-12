@@ -1,0 +1,19 @@
+{
+  "name": "jscodeshift-require-globals",
+  "version": "1.0.0",
+  "description": "A JSCodeShift to help you import your globals that you've been misusing and then bring them into the code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hilts-vaughan/jscodeshift-require-globals.git"
+  },
+  "author": "hilts.vaughan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hilts-vaughan/jscodeshift-require-globals/issues"
+  },
+  "homepage": "https://github.com/hilts-vaughan/jscodeshift-require-globals#readme"
+}
