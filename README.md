@@ -16,9 +16,15 @@ class Parser {
 ... for example, where `_` is global and missing -- you may want to run this tool. Linters are generally unhappy about this and many bundlers that
 are used nowadays won't be very happy with it either. 
 
+# What's the quick pitch?
+
+It's not going to fix all your missing requires. But if you have code that is using something over and over, such as `Backbone` and you have chosen not to use `require('Backbone')` everywhere -- this can help you clean up that mess if you need to start moving towards something like Webpack and need the `import` statements sorted out. 
+
 # What does this do?
 
-It'll scan your code given a file and a list of known global tokens and try and add the imports you're missing for you, based on some known mapping. There are very few defaults provides because this is going to be very project dependant. 
+It'll scan your code given a file and a list of known global tokens and try and add the imports you're missing for you, based on some known mapping. There are very few defaults provides because this is going to be very project dependant. However, adding imports across 100s of files if your project is quite large can be painful and scanning for them is going to be anything but easy.
+
+So, this tool will help you speed some of this along.
 
 To get an idea, consider the following input:
 
