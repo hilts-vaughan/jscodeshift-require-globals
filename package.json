@@ -4,7 +4,7 @@
   "description": "A JSCodeShift to help you import your globals that you've been misusing and then bring them into the code.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "f() { jest $@ || EXIT=$?; exit $EXIT; }; f"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/hilts-vaughan/jscodeshift-require-globals/issues"
   },
-  "homepage": "https://github.com/hilts-vaughan/jscodeshift-require-globals#readme"
+  "homepage": "https://github.com/hilts-vaughan/jscodeshift-require-globals#readme",
+  "dependencies": {
+    "jscodeshift-imports": "^1.1.0"
+  },
+  "jest": {
+    
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0",
+    "fbjs-scripts": "^0.7.1"
+  }
 }
