@@ -1,4 +1,6 @@
 # jscodeshift-require-globals
+**Blog Post to learn more:** [vaughanhilts.me](http://vaughanhilts.me/2018/04/13/automating-adding-missing-require-statements-for-globals-using-jscodeshift.html)
+
 A JSCodeShift to help you import your globals that you've been misusing and then bring them into the code. 
 
 If you've ever run into code like this:
